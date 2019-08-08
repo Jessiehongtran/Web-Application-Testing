@@ -6,18 +6,18 @@ describe('Count.js', ()=> {
     describe('ballImpact()', ()=> {
         it('shoudl return this', ()=> {
             //expect balls and strikes reset to 0 when a player reaches 4 balls
-            expect(ballImpact(4)).toBe(0)
-            expect(ballImpact(1)).toBe(1)
-            expect(ballImpact(2)).toBe(2)
+            expect(ballImpact(3)).toBe(0)
+            expect(ballImpact(1)).toBe(2)
+            expect(ballImpact(2)).toBe(3)
         })
     }),
 
     describe('strikeImpact()', ()=> {
         it('shoudl return this', ()=> {
             //expect balls and strikes reset to 0 when a player reaches 3 strikes 
-            expect(strikeImpact(3)).toBe(0)
-            expect(strikeImpact(1)).toBe(1)
-            expect(strikeImpact(2)).toBe(2)
+            expect(strikeImpact(2)).toBe(0)
+            expect(strikeImpact(1)).toBe(2)
+            expect(strikeImpact(0)).toBe(1)
         })
     }),
 

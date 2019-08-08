@@ -6,6 +6,7 @@ import Display from './Components/Display'
 function App() {
   const [ball, setBall] = useState(0);
   const [strike, setStrike] = useState(0);
+  const [hit, setHit] = useState(0);
 
   const handleBall = () =>{
     if (ball === 3) {setBall(ball-ball); setStrike(ball-ball)}

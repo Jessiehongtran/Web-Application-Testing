@@ -1,21 +1,21 @@
 
 export const ballImpact = (ball) => {
-    if (ball === 4) {
+    if (ball === 3) {
         return 0
     }
     else {
-        return ball
+        return ball + 1
     }
 }
 
 
 
 export const strikeImpact = (strike) => {
-    if (strike === 3) {
+    if (strike === 2) {
         return 0
     }
     else {
-        return strike   
+        return strike + 1  
     }
 }
 
