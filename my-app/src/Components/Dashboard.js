@@ -10,7 +10,7 @@ const Dashboard = (props) => {
             <h3>Dashboard</h3>
             <button onClick= {()=> props.handleStrike(true)}>Strike</button>
             <button onClick= {()=> props.handleBall(true)}>Ball</button>
-            <button>Hit</button>
+            <button onClick= {()=> props.handleHit(true)}>Hit</button>
             <button>Foul</button>
         </div>
     )

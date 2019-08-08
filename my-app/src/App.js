@@ -6,10 +6,10 @@ import Display from './Components/Display'
 function App() {
   const [ball, setBall] = useState(0);
   const [strike, setStrike] = useState(0);
-  const [hit, setHit] = useState(0);
+  
 
   const handleBall = () =>{
-    if (ball === 3) {setBall(ball-ball); setStrike(ball-ball)}
+    if (ball === 3 ) {setBall(ball-ball); setStrike(ball-ball)}
     else {setBall(ball+1)}
   }
 
@@ -18,10 +18,15 @@ function App() {
     else {setStrike(strike+1)}
   }
 
+  const handleHit = () => {
+    setBall(ball-ball);
+    setStrike(strike-strike)
+  }
+
   return (
     <div className="App">
       <Display ball={ball} strike={strike}/>
-      <Dashboard handleBall = {handleBall} handleStrike = {handleStrike}/>
+      <Dashboard handleBall = {handleBall} handleStrike = {handleStrike} handleHit = {handleHit}/>
     </div>
   );
 }
