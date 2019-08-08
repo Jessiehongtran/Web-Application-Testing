@@ -7,8 +7,8 @@ const Display = (props) => {
     return (
         <div>
             <h3>Display</h3>
-            <p>Strikes: {props.count} </p>
-            <p>Balls: {props.count} </p>
+            <p>Strikes: {props.strike} </p>
+            <p>Balls: {props.ball} </p>
         </div>
     )
 }

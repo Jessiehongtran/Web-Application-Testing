@@ -8,8 +8,8 @@ const Dashboard = (props) => {
     return (
         <div>
             <h3>Dashboard</h3>
-            <button onClick= {()=> props.handleChange(true)}>Strike</button>
-            <button>Ball</button>
+            <button onClick= {()=> props.handleStrike(true)}>Strike</button>
+            <button onClick= {()=> props.handleBall(true)}>Ball</button>
             <button>Hit</button>
             <button>Foul</button>
         </div>
