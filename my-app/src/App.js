@@ -23,10 +23,21 @@ function App() {
     setStrike(strike-strike)
   }
 
+  const handleFoul = () => {
+    if (strike === 0 || strike === 1) {setStrike(strike+1)}
+    else (setStrike(2))
+  }
+
   return (
     <div className="App">
-      <Display ball={ball} strike={strike}/>
-      <Dashboard handleBall = {handleBall} handleStrike = {handleStrike} handleHit = {handleHit}/>
+      <Display 
+        ball={ball} 
+        strike={strike}/>
+      <Dashboard
+        handleBall = {handleBall} 
+        handleStrike = {handleStrike} 
+        handleHit = {handleHit}
+        handleFoul = {handleFoul}/>
     </div>
   );
 }
